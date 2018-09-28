@@ -32,6 +32,13 @@ public class LinkedList {
         numNodes++;
     }
 
+    public void addFirst(Object data) {
+        Node temp = head;
+        head = new Node(data);
+        head.next = temp;
+        numNodes++;
+    }
+
 
 
 
